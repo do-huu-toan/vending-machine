@@ -1,0 +1,35 @@
+.slidebar{
+    box-sizing: border-box;
+    min-height: 800px;
+    height: 100vh;
+    background-color: #022E45;
+    color: #FFF;
+    padding: 1.6rem;    
+    width: 26rem;
+
+    ul{
+        list-style:  none;
+        padding: 0;
+        margin: 0;
+    }
+
+    a{
+        display: block;
+    }
+    .slidebar-header{
+        margin-bottom: 7.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .active{
+        font-weight: bold;
+        background-color: rgba($color: #FFFF, $alpha: 0.1);
+        border-radius: 0.8rem;
+        
+    }
+
+    .slidebar-header-icon{
+        font-size: 2rem;
+    }
+}

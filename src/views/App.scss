@@ -1,5 +1,33 @@
 .App {
   text-align: center;
+  display: flex;
+  //height: 100%;
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  box-sizing: border-box;
+  .wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    .page-body {
+      box-sizing: border-box;
+      flex: 1;
+      padding: 3.2rem;
+
+      .page-body-row-1{
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .page-body-row-2{
+        flex: 4;
+      }
+    }
+  }
 }
 
 .App-logo {
