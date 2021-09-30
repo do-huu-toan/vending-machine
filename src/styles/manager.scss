@@ -1,0 +1,44 @@
+.filterbar{
+    background: #F5F8FB;
+    justify-content: space-between;
+    box-sizing: border-box;
+    display: flex;
+    text-align: left;
+    padding: 1.6rem;
+
+    display: flex;
+
+    font-size: 1.5rem;
+    
+    .filterbar__left{
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+    }
+    
+   
+    /*
+    .combobox + *{
+        margin-left: 12px;
+    }
+    .textview + *{
+        margin-left: 12px;
+    }
+    */
+}
+
+.machine-manager-view{
+    background: #FFF;
+    display: flex;
+    //max-height: 80vh;
+    flex: 1;
+    .listview{
+        flex: 1;
+    }
+}
+
+.machine-manager-view__content{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}

@@ -10,23 +10,32 @@ import {
   Link
 } from "react-router-dom";
 import MachineManagePage from './MachineManagePage';
-
+import NavBar from '../components/NavBar';
+import SuggestSelectMachine from '../components/SuggestSelectMachine';
+import MachineInfo from './MachineInfo';
 
 function App() {
   return (
     <Router>
       <div className="App">
-          <SlideBar/>
+        <SlideBar />
         <div className="wrapper">
-            <Switch>
-              <Route path="/" exact>
-                <HomePage />
-              </Route>
-              <Route path="/manage">
-                <MachineManagePage />
-              </Route>
-            </Switch>
-          </div>
+          <Switch>
+            <Route path="/" exact>
+              <HomePage />
+            </Route>
+            <Route path="/manage" exact>
+              <MachineManagePage>
+                <SuggestSelectMachine/>
+              </MachineManagePage>
+            </Route>
+            <Route path="/manage/:id">
+              <MachineManagePage>
+                <MachineInfo/>
+              </MachineManagePage>
+            </Route>
+          </Switch>
+        </div>
       </div>
     </Router>
   );

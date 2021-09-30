@@ -1,0 +1,11 @@
+.navbar-item {
+    padding: 20px 20px 11.5px 20px;
+    font-weight: 400;
+}
+.navbar {
+    .active {
+        color: #00DAD4;
+        border-bottom: 2px solid #00dad4;
+        font-weight: bold;
+    }
+}

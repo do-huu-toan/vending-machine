@@ -1,0 +1,17 @@
+.button {
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    min-width: 120px;
+    min-height: 58px;
+    justify-content: space-between;
+    margin: auto 0;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+
+    font-weight: 500;
+    border: 1px solid;
+    border-radius: 8px;
+   
+}
