@@ -1,3 +1,4 @@
+
 .info-view{
     display: flex;
     height: 100%;
@@ -23,6 +24,12 @@
                 flex: 3;
                 text-align: left;
             }
+
+            
+        }
+
+        .flex-center{
+            justify-content: center;
         }
     }
 
@@ -55,3 +62,4 @@
         
     }
 }
+

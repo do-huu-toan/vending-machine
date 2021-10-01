@@ -4,6 +4,7 @@ import '../styles/machine-info-view.scss'
 
 import { withRouter } from 'react-router-dom'
 import CardView from "../components/CardView";
+import Button from "../components/Button";
 
 function MachineInfo(props: any) {
     console.log(props);
@@ -48,6 +49,16 @@ function MachineInfo(props: any) {
                         <p className="info-view-item__label">Mô hình máy</p>
                         <p className="info-view-item__data">{props.location.state.machineModel}</p>
                     </div>
+
+                    <div className="info-view-item flex-center">
+                        <Button background="#00BAB5" textColor="#FFF" borderColor="none">
+                            <>
+                                <p>Chỉnh sửa</p>
+                            </>
+                        </Button>
+                    </div>
+
+
                 </div>
                 <div className="info-view__right">
                     <CardView color="#4080FF">
